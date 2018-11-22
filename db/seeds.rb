@@ -7,6 +7,10 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 User.create(
+  name: "Jett",
+  email: "grend@test.com"
+  )
+User.create(
   name: "Grend",
   email: "grend@test.com"
   )
@@ -64,35 +68,35 @@ Supplier.create(
   phone_number: "123-456-7890"
   )
 Outfit.create(
-  User_id: 1,
+  user_id: 1,
   name: "Dyin' for Ryan",
   description: "hey girl", 
   image_url: "https://cdn-img.instyle.com/sites/default/files/styles/684xflex/public/images/2014/WRN/052014-cannes-guys-1-567_0.jpg?itok=C8XnDaqI",
   gender_id: 1 
   )
 Outfit.create(
-  User_id: 1,
+  user_id: 1,
   name: "Style by Stephen",
   description: "My idol", 
   image_url: "https://i.pinimg.com/474x/86/d4/f4/86d4f47d1317ad48204e39b04fd20040--ayesha-curry-stephen-curry.jpg",
   gender_id: 1 
   )
 Outfit.create(
-  User_id: 1,
+  user_id: 1,
   name: "Zac Attack",
   description: "prefers cheetohs puffs to crunchy", 
   image_url: "https://i.pinimg.com/474x/b7/43/ce/b743cea254dcbf5ca0721d5dd5e8709d--dating-streetstyle.jpg",
   gender_id: 1 
   )
 Outfit.create(
-  User_id: 2,
+  user_id: 2,
   name: "The Big O",
   description: "a total WIN-frey", 
   image_url: "http://images.oprah.com/images/tows/200910/20091015/20091015-tows-cookie-johnson-1-284x426.jpg",
   gender_id: 2 
   )
 Outfit.create(
-  User_id: 3,
+  user_id: 3,
   name: "spider dude",
   description: "spooderman", 
   image_url: "https://i.ebayimg.com/images/g/3vwAAOSw1BlZWV1j/s-l300.jpg",
@@ -248,3 +252,111 @@ Product.create(
   category_id: 2,
   gender_id: 2
   )
+Product.create(
+  name: "Womens High Waist Loose Fit Straight Leg Jeans Boyfriend Denim Pant",
+  image: "https://images-na.ssl-images-amazon.com/images/I/41117W6aERL._AC_UL500_SR385,500_QL65_.jpg",
+  price: 20.90,
+  product_url: "https://www.amazon.com/Womens-Casual-Cotton-Boyfriend-Straight/dp/B01FFH6GP0/ref=sr_1_1_sspa?s=apparel&ie=UTF8&qid=1542574233&sr=1-1-spons&nodeID=7141123011&psd=1&keywords=mom+jeans&psc=1",
+  supplier_id: 3,
+  outfit_id: 4,
+  category_id: 6,
+  gender_id: 2
+  )
+Product.create(
+  name: "New Look High Vamp Pointed Court Shoe",
+  image: "https://images.asos-media.com/products/new-look-high-vamp-pointed-court-shoe/9004583-1-black?$XL$?$XXL$&wid=600&fmt=jpeg&qlt=70,0&op_sharpen=0&resMode=sharp2&op_usm=2,0.3,3,1&iccEmbed=0&printRes=72",
+  price: 26.00,
+  product_url: "https://us.asos.com/new-look/new-look-high-vamp-pointed-court-shoe/prd/9004583?clr=black&SearchQuery=black%20pumps&gridcolumn=2&gridrow=13&gridsize=4&pge=1&pgesize=72&totalstyles=141",
+  supplier_id: 4,
+  outfit_id: 4,
+  category_id: 9,
+  gender_id: 2
+  )
+Product.create(
+  name: "Carfeny 14k Gold Plated Bangles High Polish 7 Pieces Stackable Gold Bangle Bracelets for Women",
+  image: "https://images-na.ssl-images-amazon.com/images/I/5184Cv0QpoL._AC_US400_QL65_.jpg",
+  price: 15.99,
+  product_url: "https://www.amazon.com/Carfeny-Bangles-Stackable-Bracelets-Birthday/dp/B01F6NU3XO/ref=sr_1_24?ie=UTF8&qid=1542574698&sr=8-24&keywords=gold+women+bracelet",
+  supplier_id: 3,
+  outfit_id: 4,
+  category_id: 10,
+  gender_id: 2
+  )
+Product.create(
+  name: "Spider-Man Homecoming Muscle Chest Costume, Medium, Multicolor",
+  image: "https://images-na.ssl-images-amazon.com/images/I/41q26zf7WCL._AC_US400_QL65_.jpg",
+  price: 18.45,
+  product_url: "https://www.amazon.com/Rubies-Spider-Man-Homecoming-Costume-Multicolor/dp/B01NAV9H1O/ref=sr_1_10?ie=UTF8&qid=1542575589&sr=8-10&keywords=spiderman+costume",
+  supplier_id: 3,
+  outfit_id: 5,
+  category_id: 4,
+  gender_id: 3
+  )
+Product.create(
+  name: "Marvel Spider-Man Webshooter Play Set - Spider-Man: Homecoming",
+  image: "https://images-na.ssl-images-amazon.com/images/I/51Ka5JkwgYL._AC_US320_QL65_.jpg",
+  price: 39.29,
+  product_url: "https://www.amazon.com/Marvel-Spider-Man-Webshooter-Play-Homecoming461063233437/dp/B071Y7Y2Q8/ref=sr_1_1?s=toys-and-games&ie=UTF8&qid=1542575845&sr=1-1&keywords=spiderman+gloves",
+  supplier_id: 3,
+  outfit_id: 5,
+  category_id: 10,
+  gender_id: 3
+  )
+Product.create(
+  name: "Men's Marvel Universe Spider-Man 2nd Skin Costume",
+  image: "https://images-na.ssl-images-amazon.com/images/I/41FXjnoWagL._AC_US436_QL65_.jpg",
+  price: 37.11,
+  product_url: "https://www.amazon.com/Rubies-Mens-Marvel-Spider-Man-Large/dp/B00IP8PUR2/ref=sr_1_7?ie=UTF8&qid=1542576996&sr=8-7&keywords=spiderman%2Bcostume&th=1&psc=1",
+  supplier_id: 3,
+  outfit_id: 5,
+  category_id: 4,
+  gender_id: 3
+  )
+Product.create(
+  name: "ASOS DESIGN super skinny jeans in black",
+  image: "https://images.asos-media.com/products/asos-design-super-skinny-jeans-in-black/4903066-1-black?$XL$?$XXL$&wid=600&fmt=jpeg&qlt=70,0&op_sharpen=0&resMode=sharp2&op_usm=2,0.3,3,1&iccEmbed=0&printRes=72",
+  price: 40.00,
+  product_url: "https://us.asos.com/asos-design/asos-design-super-skinny-jeans-in-black/prd/4903066?clr=black&SearchQuery=black%20skinny%20jeans&gridcolumn=1&gridrow=1&gridsize=4&pge=1&pgesize=72&totalstyles=907",
+  supplier_id: 4,
+  outfit_id: 1,
+  category_id: 6,
+  gender_id: 1
+  )
+Product.create(
+  name: "Hollister short sleeve core solid oxford shirt slim fit button down in light blue",
+  image: "https://images.asos-media.com/products/hollister-short-sleeve-core-solid-oxford-shirt-slim-fit-button-down-in-light-blue/10054436-1-lightblue?$XL$?$XXL$&wid=600&fmt=jpeg&qlt=70,0&op_sharpen=0&resMode=sharp2&op_usm=2,0.3,3,1&iccEmbed=0&printRes=72",
+  price: 34.95,
+  product_url: "https://us.asos.com/hollister/hollister-short-sleeve-core-solid-oxford-shirt-slim-fit-button-down-in-light-blue/prd/10054436?clr=light-blue&SearchQuery=light%20blue%20button%20up&gridcolumn=1&gridrow=2&gridsize=4&pge=1&pgesize=72&totalstyles=9",
+  supplier_id: 4,
+  outfit_id: 1,
+  category_id: 2,
+  gender_id: 1
+  )
+Recommendation.create(
+  original_product_id: 19,
+  suggested_product_id: 21,
+  user_id: 2, 
+  comments: "you can drink through the hood in this"
+  )
+Recommendation.create(
+  original_product_id: 6,
+  suggested_product_id: 22,
+  user_id: 4, 
+  comments: "higher quality denim - marginal cost increase"
+  )
+Recommendation.create(
+  original_product_id: 1,
+  suggested_product_id: 23,
+  user_id: 5, 
+  comments: "this one is much more Ryan"
+  )
+Vote.create(recommendation_id: 1, user_id: 1, value: -1)
+Vote.create(recommendation_id: 1, user_id: 2, value: 1)
+Vote.create(recommendation_id: 1, user_id: 3, value: 1)
+Vote.create(recommendation_id: 1, user_id: 4, value: -1)
+Vote.create(recommendation_id: 1, user_id: 5, value: 1)
+Vote.create(recommendation_id: 1, user_id: 1, value: 1)
+Vote.create(recommendation_id: 1, user_id: 2, value: 1)
+Vote.create(recommendation_id: 1, user_id: 3, value: -1)
+Vote.create(recommendation_id: 1, user_id: 4, value: 1)
+Vote.create(recommendation_id: 1, user_id: 5, value: 1)
