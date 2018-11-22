@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_11_22_004703) do
+ActiveRecord::Schema.define(version: 2018_11_22_005552) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -42,7 +42,7 @@ ActiveRecord::Schema.define(version: 2018_11_22_004703) do
     t.string "image"
     t.decimal "price", precision: 7, scale: 2
     t.string "product_url"
-    t.integer "Supplier_id"
+    t.integer "supplier_id"
     t.integer "outfit_id"
     t.integer "category_id"
     t.integer "gender_id"
