@@ -1,8 +1,12 @@
 class Api::OutfitsController < ApplicationController
-  before_action :authenticate_user, except: [:index, :show]
-  def index
-    @outfits = Outfit.all
-    @outfits = @outfits.order(:gender_id => :asc)
+  before_action :authenticate_user, except: [:male_index, :female_index, :show]
+  def male_index
+    @outfits = Outfit.where(gender_id: 1)
+    render "index.json.jbuilder"
+  end 
+
+  def female_index
+    @outfits = Outfit.where(gender_id: 2)
     render "index.json.jbuilder"
   end 
 
@@ -28,7 +32,7 @@ class Api::OutfitsController < ApplicationController
           image: product[:image],
           product_url: product[:product_url],
           outfit_id: @outfit.id,
-          gender_id: params[:gender_id],
+          gender_id: 1,
           category_id: 1,
           supplier_id: 1,
         )
