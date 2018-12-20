@@ -1,5 +1,5 @@
 class Api::OutfitsController < ApplicationController
-  before_action :authenticate_user, except: [:male_index, :female_index, :show]
+  before_action :authenticate_user, except: [:male_index, :female_index, :show, :tumblr]
   def male_index
     @outfits = Outfit.where(gender_id: 1)
     render "index.json.jbuilder"
@@ -43,5 +43,18 @@ class Api::OutfitsController < ApplicationController
     end
   end
 
-   
+  def tumblr
+    Tumblr.configure do |config|
+      config.consumer_key = "PFRpEeiH8SYeQGU8vazuY1fAqTrKC6YRDoKIEoRjNXvSWY8apw"
+      config.consumer_secret = "E5tWR1uhbvBSRfwz5SbA0xAJx3vWjEtF2cULldDMSZna318GZo"
+      # config.oauth_token = "access_token"
+      # config.oauth_token_secret = "access_token_secret"
+    end
+
+    client = Tumblr::Client.new
+    render json: client.posts("fashionfamoustyle.tumblr.com", :type => "photo", :limit => 100)
+
+  end
 end
+
+

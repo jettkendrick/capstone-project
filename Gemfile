@@ -24,6 +24,9 @@ gem 'jbuilder', '~> 2.5'
 gem 'bcrypt', '~> 3.1.7'
 gem 'jwt'
 gem 'rack-cors', require: 'rack/cors'
+gem 'tumblr_client', '~> 0.8.5'
+gem 'omniauth-tumblr'
+gem 'figaro'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'

@@ -6,6 +6,7 @@ Rails.application.routes.draw do
     get "/womens" => "outfits#female_index"
     post "/outfits" => "outfits#create"
     get "/outfits/:id" => "outfits#show"
+    get "/tumblr" => "outfits#tumblr"
 
     post"/recommendations" => "recommendations#create"
 

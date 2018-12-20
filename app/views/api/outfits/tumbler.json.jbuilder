@@ -1,0 +1,2 @@
+json.blog @client.photo
+
